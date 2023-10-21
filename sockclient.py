@@ -2,7 +2,7 @@
 """
 Created on Thu Aug 17 17:10:19 2023
 
-@author: dell
+@author: richard1347
 """
 
 import socket,win32api
@@ -18,8 +18,7 @@ class ClientSocket:
         connSocket.connect((self.peerIpaddr,self.peerPort))
         win32api.MessageBox(0,'Already connected server at '+str(self.peerIpaddr)+':'+str(self.peerPort),'Connecting Result',0x00|0x40)
         while True:
-            #sending=input('Please input your message:>')
-            sending='requesting'
+            sending=input('Please input your message:>')
             if sending=='q' or sending=='exit':
                 break;
             connSocket.send(sending.encode())
