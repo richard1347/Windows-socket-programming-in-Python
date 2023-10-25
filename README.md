@@ -15,7 +15,7 @@ The 7-layer network architecture is often referred in complex network programs, 
 Here we should notice that the server begin listening on the socket, this is a blocking process, it will block until it receives a client's connection request.
 This program also uses Win32 API to provide some basic UIs, we import win32api package at the beginning of the program.
 
-# How to install Win32 API for Python
+## How to install Win32 API for Python
 Open your Windows command line prompt, input
 ### >pip install pywin32
 This presumes you have correctly installed Python 3.x on your system.
