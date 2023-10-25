@@ -29,5 +29,5 @@ class ClientSocket:
         connSocket.close()
         
 if __name__=='__main__':
-    sock1=ClientSocket('192.168.0.5',23234)
+    sock1=ClientSocket('192.168.0.5',23234)                                            #replace IP address and port with yours
     sock1.connect_server()
