@@ -28,5 +28,5 @@ class ServerSocket:
         svrSocket.close()
 
 if __name__=='__main__':
-    sock1=ServerSocket('192.168.0.6',23234)
+    sock1=ServerSocket('192.168.0.6',23234)                                                #replace IP address and port with yours
     sock1.start_server()
